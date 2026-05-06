@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Lafatrariandonitala Mahavita, étudiant en Licence Informatique, futur Master Cybersécurité, à la recherche d’une alternance SOC / Blue Team de 2 ans dès septembre 2026.">
+  <title>Lafatra Mahavita — Cybersécurité & SOC Analyst</title>
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#0a0d12">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursor-trail"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">~/mahavita.dev</a>
+    <ul class="nav-links">
+      <li><a href="#about">à propos</a></li>
+      <li><a href="#skills">compétences</a></li>
+      <li><a href="#projects">projets</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <a href="CV_SOC_Mahavita_Alternance.pdf" class="nav-cv" download>Télécharger le CV</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-content">
+      <div class="hero-tag" data-reveal>
+        <span class="tag-dot"></span>
+        Disponible en alternance · Septembre 2026 · 2 ans
+      </div>
+      <h1 data-reveal>
+        <span class="h1-line">Lafatra</span>
+		<span class="h1-line">Mahavita</span>
+        <span class="h1-sub">Cybersécurité &amp; Développement</span>
+      </h1>
+      <p class="hero-desc" data-reveal>
+        Étudiant en Licence Informatique à l'Université de Rouen Normandie, futur Master Cybersécurité en septembre 2026, passionné par la détection d'incidents, l'analyse de logs et la sécurité opérationnelle. Solides bases en Linux, réseaux TCP/IP et programmation.
+      </p>
+
+      <div class="hero-cta" data-reveal>
+        <a href="#projects" class="btn-primary">Voir les projets</a>
+        <a href="https://github.com/RalphLaClass" target="_blank" rel="noopener noreferrer" class="btn-ghost">GitHub ↗</a>
+        <a href="https://tryhackme.com/p/RalphLaClass" target="_blank" rel="noopener noreferrer" class="btn-ghost">TryHackMe ↗</a>
+		<a href="https://www.root-me.org/JonDSnow" target="_blank" rel="noopener noreferrer" class="btn-ghost">Root-Me ↗</a>
+        <a href="https://www.linkedin.com/in/lafatra-mahavita-981449276/" target="_blank" rel="noopener noreferrer" class="btn-ghost">LinkedIn ↗</a>
+      </div>
+    </div>
+    <div class="hero-terminal" data-reveal>
+      <div class="terminal-bar">
+        <span class="t-title">root@kali: ~</span>
+        <div class="t-dots">
+          <span class="t-btn t-minimize">─</span>
+          <span class="t-btn t-maximize">□</span>
+          <span class="t-btn t-close">✕</span>
+        </div>
+      </div>
+      <div class="terminal-body" id="terminal-body">
+
+        <!-- Commande 1 -->
+        <div class="t-kali-prompt">
+          <span class="t-top-line"><span class="t-corner">┌──(</span><span class="t-user">mahavita</span><span class="t-at">㉿</span><span class="t-host">kali</span><span class="t-corner">)-[</span><span class="t-path">~</span><span class="t-corner">]</span></span>
+          <span class="t-bottom-line"><span class="t-corner">└─</span><span class="t-dollar">$</span> <span class="t-cmd" id="t-cmd1"></span></span>
+        </div>
+        <div class="t-output" id="t-out1" style="display:none">
+          <span class="t-green">Name    :</span> Lafatrariandonitala Mahavita<br>
+          <span class="t-green">Role    :</span> SOC Analyst / Cybersec Student<br>
+          <span class="t-green">School  :</span> Rouen Normandie<br>
+          <span class="t-green">Status  :</span> <span class="t-blink">▶ Seeking alternance Sept. 2026</span>
+        </div>
+
+        <!-- Commande 2 -->
+        <div class="t-kali-prompt" id="t-line2" style="display:none">
+          <span class="t-top-line"><span class="t-corner">┌──(</span><span class="t-user">mahavita</span><span class="t-at">㉿</span><span class="t-host">kali</span><span class="t-corner">)-[</span><span class="t-path">~</span><span class="t-corner">]</span></span>
+          <span class="t-bottom-line"><span class="t-corner">└─</span><span class="t-dollar">$</span> <span class="t-cmd" id="t-cmd2"></span></span>
+        </div>
+        <div class="t-output" id="t-out2" style="display:none">
+          <span class="t-green">Nmap</span> · Metasploit · Burp Suite · Wireshark<br>
+          <span class="t-green">SIEM</span> · tcpdump · John the Ripper · Hydra<br>
+          <span class="t-green">C</span> · Python · Bash · OCaml · JavaScript · PHP
+        </div>
+
+        <!-- Prompt final vide -->
+        <div class="t-kali-prompt" id="t-line3" style="display:none">
+          <span class="t-top-line"><span class="t-corner">┌──(</span><span class="t-user">mahavita</span><span class="t-at">㉿</span><span class="t-host">kali</span><span class="t-corner">)-[</span><span class="t-path">~</span><span class="t-corner">]</span></span>
+          <span class="t-bottom-line"><span class="t-corner">└─</span><span class="t-dollar">$</span> <span class="t-blink-cursor"></span></span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header" data-reveal>
+      <span class="section-num">01</span>
+      <h2>À propos</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text" data-reveal>
+        <p>
+          Je m'appelle Lafatrariandonitala Mahavita, 23 ans, étudiant en Licence Informatique à l'Université de Rouen Normandie,
+          en route vers un Master Cybersécurité en septembre 2026. Mon intérêt pour la sécurité
+          est double : comprendre comment les systèmes sont attaqués, et comment les défendre.
+        </p>
+        <p>
+          Côté offensif, je pratique les CTF sur TryHackMe (Top 5%) et Root-Me. Côté défensif,
+          je me forme à l'analyse de logs, la corrélation d'événements et la qualification d'alertes SOC.
+          Mon background en développement — C système, compilation, réseaux bas niveau — me donne
+          une compréhension fine de ce qui se passe sous le capot.
+        </p>
+        <p>
+          Je recherche une <strong>alternance de 2 ans en cybersécurité</strong>, idéalement orientée
+          SOC / Blue Team, disponible dès septembre 2026.
+        </p>
+      </div>
+      <div class="about-info" data-reveal>
+        <div class="info-card">
+          <div class="info-row">
+            <span class="info-label">Formation</span>
+            <span class="info-val">Licence Informatique → Master Cybersécurité</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Âge</span>
+            <span class="info-val">23 ans</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Université</span>
+            <span class="info-val">Rouen Normandie</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Dispo</span>
+            <span class="info-val highlight">Septembre 2026 · 2 ans</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Anglais</span>
+            <span class="info-val">CLES B2 — technique</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Localisation</span>
+            <span class="info-val">Rouen / Île-de-France</span>
+          </div>
+        </div>
+        <div class="ctf-card">
+          <div class="ctf-header">Plateformes CTF</div>
+          <div class="ctf-row">
+            <span class="ctf-platform">TryHackMe</span>
+            <span class="ctf-handle">JonDSnow</span>
+            <span class="ctf-badge">Top 5%</span>
+          </div>
+          <div class="ctf-row">
+            <span class="ctf-platform">Root-Me</span>
+            <span class="ctf-handle">JonDSnow</span>
+            <span class="ctf-badge">Actif</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-header" data-reveal>
+      <span class="section-num">02</span>
+      <h2>Compétences</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group" data-reveal>
+        <div class="sg-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Sécurité offensive</h3>
+        <ul class="skill-list">
+          <li>Nmap <span class="sk-note">— énumération, scan de ports</span></li>
+          <li>Metasploit <span class="sk-note">— exploitation, post-exploitation</span></li>
+          <li>Burp Suite <span class="sk-note">— analyse HTTP, requêtes, SQLi</span></li>
+          <li>Hydra / SQLMap <span class="sk-note">— bruteforce, injection</span></li>
+          <li>Gobuster <span class="sk-note">— fuzzing de répertoires</span></li>
+        </ul>
+      </div>
+      <div class="skill-group" data-reveal>
+        <div class="sg-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <h3>SOC & Défense</h3>
+        <ul class="skill-list">
+          <li>SIEM <span class="sk-note">— corrélation, alertes</span></li>
+          <li>Wireshark / tcpdump <span class="sk-note">— analyse paquets</span></li>
+          <li>Analyse de logs <span class="sk-note">— système & réseau</span></li>
+          <li>Réponse à incident <span class="sk-note">— qualification, triage</span></li>
+          <li>John the Ripper <span class="sk-note">— hash, cryptographie</span></li>
+        </ul>
+      </div>
+      <div class="skill-group" data-reveal>
+        <div class="sg-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>Développement</h3>
+        <ul class="skill-list">
+          <li>C <span class="sk-note">— système, sockets, bas niveau</span></li>
+          <li>Python / Bash <span class="sk-note">— scripting, automatisation</span></li>
+          <li>Java <span class="sk-note">— POO, algorithmes</span></li>
+          <li>OCaml <span class="sk-note">— fonctionnel, compilation</span></li>
+          <li>React / JS / PHP <span class="sk-note">— fullstack web</span></li>
+        </ul>
+      </div>
+      <div class="skill-group" data-reveal>
+        <div class="sg-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Systèmes & Réseaux</h3>
+        <ul class="skill-list">
+          <li>Linux avancé <span class="sk-note">— bash, processus, syscall</span></li>
+          <li>Windows <span class="sk-note">— PowerShell, Event Logs</span></li>
+          <li>TCP/IP <span class="sk-note">— protocoles, analyse réseau</span></li>
+          <li>Programmation socket <span class="sk-note">— client/serveur, connexions</span></li>
+          <li>Assembleur 80x86 <span class="sk-note">— bases bas niveau</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header" data-reveal>
+      <span class="section-num">03</span>
+      <h2>Projets</h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card featured" data-reveal>
+        <div class="pc-top">
+          <div class="pc-icon">CS</div>
+          <div class="pc-links">
+            <a href="https://github.com/RalphLaClass" target="_blank" rel="noopener noreferrer" class="pc-link">GitHub ↗</a>
+          </div>
+        </div>
+        <h3>Architecture Client/Serveur</h3>
+        <p>Serveur multi-clients en C avec gestion des processus, signaux UNIX et IPC. Axé système d'exploitation — gestion fine des ressources et de la concurrence.</p>
+        <div class="pc-tags">
+          <span class="pc-tag accent">C</span>
+          <span class="pc-tag">Sockets</span>
+          <span class="pc-tag">OS</span>
+          <span class="pc-tag">IPC</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-reveal>
+        <div class="pc-top">
+          <div class="pc-icon">CC</div>
+          <div class="pc-links">
+            <a href="https://github.com/RalphLaClass" target="_blank" rel="noopener noreferrer" class="pc-link">GitHub ↗</a>
+          </div>
+        </div>
+        <h3>Compilateur Bison/Flex</h3>
+        <p>Compilation complète d'un langage inspiré de LaTeX — analyse lexicale, syntaxique et sémantique, génération de code intermédiaire.</p>
+        <div class="pc-tags">
+          <span class="pc-tag accent">Bison</span>
+          <span class="pc-tag">Flex</span>
+          <span class="pc-tag">C</span>
+          <span class="pc-tag">Compilation</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-reveal>
+        <div class="pc-top">
+          <div class="pc-icon">TM</div>
+          <div class="pc-links">
+            <a href="https://github.com/RalphLaClass" target="_blank" rel="noopener noreferrer" class="pc-link">GitHub ↗</a>
+          </div>
+        </div>
+        <h3>Machine de Turing éditable</h3>
+        <p>Simulation interactive d'une machine de Turing avec configuration dynamique des états, transitions et alphabet. Interface graphique Java.</p>
+        <div class="pc-tags">
+          <span class="pc-tag accent">Java</span>
+          <span class="pc-tag">Automates</span>
+          <span class="pc-tag">Théorie</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-reveal>
+        <div class="pc-top">
+          <div class="pc-icon">WEB</div>
+          <div class="pc-links">
+            <a href="https://github.com/RalphLaClass" target="_blank" rel="noopener noreferrer" class="pc-link">GitHub ↗</a>
+          </div>
+        </div>
+        <h3>Sites web fullstack (×3)</h3>
+        <p>Réservation hôtel + bibliothèque en ligne sans framework, puis refonte complète avec React et Docker. Du vanilla au moderne.</p>
+        <div class="pc-tags">
+          <span class="pc-tag accent">React</span>
+          <span class="pc-tag">Docker</span>
+          <span class="pc-tag">PHP</span>
+          <span class="pc-tag">JS</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-reveal>
+        <div class="pc-top">
+          <div class="pc-icon">RX</div>
+          <div class="pc-links">
+            <a href="https://github.com/RalphLaClass" target="_blank" rel="noopener noreferrer" class="pc-link">GitHub ↗</a>
+          </div>
+        </div>
+        <h3>Projet réseaux socket</h3>
+        <p>Implémentation bas niveau de la communication réseau par sockets. Protocoles applicatifs, gestion des connexions et des erreurs.</p>
+        <div class="pc-tags">
+          <span class="pc-tag accent">C</span>
+          <span class="pc-tag">TCP/IP</span>
+          <span class="pc-tag">Sockets</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-reveal>
+        <div class="pc-top">
+          <div class="pc-icon">PL</div>
+          <div class="pc-links">
+            <a href="https://github.com/RalphLaClass" target="_blank" rel="noopener noreferrer" class="pc-link">GitHub ↗</a>
+          </div>
+        </div>
+        <h3>Polynômes algébriques</h3>
+        <p>Division de polynômes sur grands entiers dans un ensemble algébrique. Arithmétique fonctionnelle pure, gestion des cas limites.</p>
+        <div class="pc-tags">
+          <span class="pc-tag accent">OCaml</span>
+          <span class="pc-tag">Algèbre</span>
+          <span class="pc-tag">Fonctionnel</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-reveal>
+        <div class="pc-top">
+          <div class="pc-icon">TXT</div>
+          <div class="pc-links">
+            <a href="https://github.com/RalphLaClass" target="_blank" rel="noopener noreferrer" class="pc-link">GitHub ↗</a>
+          </div>
+        </div>
+        <h3>Traitement de textes</h3>
+        <p>Analyse et traitement de mots dans plusieurs corpus textuels. Structures de données efficaces, tri et indexation.</p>
+        <div class="pc-tags">
+          <span class="pc-tag accent">C</span>
+          <span class="pc-tag">Algo</span>
+          <span class="pc-tag">Structures</span>
+        </div>
+      </div>
+
+      <div class="project-card soc-card" data-reveal>
+        <div class="pc-top">
+          <div class="pc-icon soc-icon">SOC</div>
+          <div class="pc-links">
+            <a href="https://tryhackme.com/p/JonDSnow" target="_blank" rel="noopener noreferrer" class="pc-link">TryHackMe ↗</a>
+          </div>
+        </div>
+        <h3>Lab SOC — Analyse d'incidents</h3>
+        <p>Détection d'intrusions, corrélation de logs, investigation forensique et qualification d'alertes en environnement contrôlé.</p>
+        <div class="pc-tags">
+          <span class="pc-tag accent">SIEM</span>
+          <span class="pc-tag">Wireshark</span>
+          <span class="pc-tag">Forensics</span>
+          <span class="pc-tag">THM</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-header" data-reveal>
+      <span class="section-num">04</span>
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-wrapper" data-reveal>
+      <div class="contact-text">
+        <h3>Recrutons ensemble.</h3>
+        <p>Je recherche une alternance de 2 ans en cybersécurité, disponible dès septembre 2026. N'hésitez pas à me contacter pour discuter d'une opportunité.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:maxlafatra@gmail.com" class="contact-item">
+          <span class="ci-label">Email</span>
+          <span class="ci-val">maxlafatra@gmail.com</span>
+          <span class="ci-arrow">→</span>
+        </a>
+        <a href="https://github.com/RalphLaClass" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <span class="ci-label">GitHub</span>
+          <span class="ci-val">github.com/RalphLaClass</span>
+          <span class="ci-arrow">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/lafatra-mahavita-981449276/" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <span class="ci-label">LinkedIn</span>
+          <span class="ci-val">linkedin.com/in/lafatra-mahavita-981449276</span>
+          <span class="ci-arrow">→</span>
+        </a>
+        <a href="https://www.root-me.org/JonDSnow" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <span class="ci-label">Root-Me</span>
+          <span class="ci-val">JonDSnow</span>
+          <span class="ci-arrow">→</span>
+        </a>
+        <a href="https://tryhackme.com/p/RalphLaClass" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <span class="ci-label">TryHackMe</span>
+          <span class="ci-val">JonDSnow · Top 5%</span>
+          <span class="ci-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="foot-logo">~/mahavita.dev</span>
+    <span class="foot-copy">2026 · Construit à la main · Rouen</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
