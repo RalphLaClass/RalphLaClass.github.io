@@ -69,5 +69,3 @@ open index.html   # ou double-clic sur le fichier
 - 🐙 [GitHub](https://github.com/RalphLaClass)
 - 🎯 [TryHackMe — Top 5%](https://tryhackme.com/p/RalphLaClass)
 - 🎯 [RootMe](https://www.root-me.org/RalphLaClass)
-
-- 🎯
