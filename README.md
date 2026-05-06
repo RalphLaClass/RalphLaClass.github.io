@@ -65,7 +65,7 @@ open index.html   # ou double-clic sur le fichier
 ## Me contacter
 
 - 📧 maxlafatra@gmail.com
-- 💼 [LinkedIn](https://linkedin.com/in/mahavita)
+- 💼 [LinkedIn](https://www.linkedin.com/in/lafatra-mahavita-981449276)
 - 🐙 [GitHub](https://github.com/RalphLaClass)
 - 🎯 [TryHackMe — Top 5%](https://tryhackme.com/p/RalphLaClass)
 - 🎯 [RootMe](https://www.root-me.org/RalphLaClass)
