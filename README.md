@@ -17,7 +17,7 @@
 Portfolio vitrine développé from scratch — sans framework, sans template.  
 Design inspiré de l'environnement terminal Kali Linux : fond sombre, vert terminal, typographie monospace.
 
-Conçu pour présenter mon profil à des recruteurs en cybersécurité et maximiser mes chances de trouver une alternance SOC / Blue Team dès septembre 2025.
+Conçu pour présenter mon profil à des recruteurs en cybersécurité et maximiser mes chances de trouver une alternance SOC / Blue Team dès septembre 2026.
 
 ---
 
@@ -67,4 +67,7 @@ open index.html   # ou double-clic sur le fichier
 - 📧 maxlafatra@gmail.com
 - 💼 [LinkedIn](https://linkedin.com/in/mahavita)
 - 🐙 [GitHub](https://github.com/RalphLaClass)
-- 🎯 [TryHackMe — Top 5%](https://tryhackme.com/p/JonDSnow)
+- 🎯 [TryHackMe — Top 5%](https://tryhackme.com/p/RalphLaClass)
+- 🎯 [RootMe](https://www.root-me.org/RalphLaClass)
+
+- 🎯
